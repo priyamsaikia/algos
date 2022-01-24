@@ -92,4 +92,73 @@ public class LinkedList {
         Algo.print("There is no loop here");
         return false;
     }
+
+    public void removeDuplicatedFromSortedLinkedList() {
+        //the linked list must be sorted
+        if (this.head == null) {
+            return;
+        }
+        Node prev = this.head;
+        Node current = this.head;
+
+        int temp;
+        while (current.next != null) {
+            prev = current;
+            current = current.next;
+            if (prev.data == current.data) {
+                Algo.print("found duplicates " + prev.data + " and " + current.data);
+                //remove current
+                prev.next = current.next;
+                if (current.next != null) {
+                    current = current.next;
+                }
+            }
+        }
+    }
+
+    public void swapInPairs() {//123456 becomes 214365
+        if (this.head == null) {
+            return;
+        }
+        Node current = this.head;
+        Node prev = this.head;
+        int temp;
+        while (current.next != null) {
+            prev = current;
+            current = current.next;
+            Algo.print("swapping " + prev.data + " and " + current.data);
+            temp = prev.data;
+            prev.data = current.data;
+            current.data = temp;
+            if (current.next != null) {
+                current = current.next;
+            }
+        }
+    }
+
+    public void addOneToLinkedListNumber() {//1991 + 1 => 2-0-0-0 as a linkedList
+        if (this.head == null) {
+            return;
+        }
+        Node current = this.head;
+        String numberString = "";
+        while (current != null) {
+            numberString += current.data;
+            current = current.next;
+        }
+        Algo.print("The number string is = " + numberString);
+        int number = Integer.parseInt(numberString);
+        number += 1;
+        Algo.print("Sum = " + number);
+        char[] chars = (number + "").toCharArray();
+        current = this.head;
+        Node prev = this.head;
+        for (int i = 0; i < chars.length; i++) {
+            current.data = Integer.parseInt(chars[i] + "");
+            prev = current;
+            current = current.next;
+        }
+        prev.next = null;
+        print();
+    }
 }
