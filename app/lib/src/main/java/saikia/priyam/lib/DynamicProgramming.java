@@ -25,4 +25,11 @@ public class DynamicProgramming {
         }
         return -1;
     }
+
+    static public void swap(int a, int b) {
+        a = a + b;
+        b = a - b;
+        a = a - b;
+        System.out.println("Swapped " + a + " and " + b);
+    }
 }

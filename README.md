@@ -15,7 +15,13 @@
 ## [2. Dynamic](https://github.com/priyamsaikia/algos/blob/master/app/lib/src/main/java/saikia/priyam/lib/DynamicProgramming.java)
 ##### 1. Find the equilibrium index of an array: findEquilibriumIndex(int[] array)
 
-## [2. Sorting](https://github.com/priyamsaikia/algos/blob/master/app/lib/src/main/java/saikia/priyam/lib/Sorting.java)
+## [3. Sorting](https://github.com/priyamsaikia/algos/blob/master/app/lib/src/main/java/saikia/priyam/lib/Sorting.java)
 ##### 1. Bubble Sort
 ##### 2. Insertion Sort
 ##### 3. Quick Sort (with middle element as pivot)
+
+## [4. Strings](https://github.com/priyamsaikia/algos/blob/master/app/lib/src/main/java/saikia/priyam/lib/StringProblems.java)
+##### 1. Anagram: checkAnagram(String str1, String str2)
+##### 2. Palindrome: isPalindrome(String str)
+##### 3. Reverse: reverseString(String str)
+##### 4. Print Duplicate Characters in a String: printDuplicates(String str)

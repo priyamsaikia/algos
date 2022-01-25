@@ -18,8 +18,14 @@ public class Algo {
         list.insertFirst(0);*/
         int[] arr = {-7, 2, 5, 2, -4, 3, 1};
 
-        Sorting.insertionSort(arr);
+        //Sorting.insertionSort(arr);
         //Sorting.quickSort(arr, 0, arr.length - 1);
+
+        StringProblems.checkAnagram("mra", "ram");
+        StringProblems.isPalindrome("madam");
+        StringProblems.reverseString("papaya");
+        StringProblems.printDuplicates("papaya");
+
     }
 
     public static void print(String msg) {
