@@ -1,5 +1,7 @@
 package saikia.priyam.lib;
 
+import static saikia.priyam.lib.DynamicProgramming.findEquilibriumIndex;
+
 public class Algo {
     public static void main(String args[]) {
         System.out.println("Hello World");
@@ -16,15 +18,18 @@ public class Algo {
         list.insertFirst(0);
         //list.deleteMidElement();
         list.print();
-        //list.removeDuplicatedFromSortedLinkedList();
+        //list.removeDuplicatesFromSortedLinkedList();
         //list.print();
         //list.detectLoop();
         //list.createLoop();
         //list.detectLoop();
         //list.swapInPairs();
         //list.print();
-       // int[] arr = {-7, 2, 5, 2, -4, 3, 1};
-        list.addOneToLinkedListNumber();
+         int[] arr = {-7, 2, 5, 2, -4, 3, 1};
+         findEquilibriumIndex(arr);
+       // list.addOneToLinkedListNumber();
+        list.reverseLinkedList();
+        list.print();
     }
 
     public static void print(String msg) {

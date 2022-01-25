@@ -93,7 +93,7 @@ public class LinkedList {
         return false;
     }
 
-    public void removeDuplicatedFromSortedLinkedList() {
+    public void removeDuplicatesFromSortedLinkedList() {
         //the linked list must be sorted
         if (this.head == null) {
             return;
@@ -160,5 +160,21 @@ public class LinkedList {
         }
         prev.next = null;
         print();
+    }
+
+    public void reverseLinkedList() {//123456
+        if (this.head == null) {
+            return;
+        }
+        Node currentNode = this.head;
+        Node prev = null;
+        Node next = null;
+        while (next != null) {
+            next = currentNode.next;
+            currentNode.next = prev;
+            prev = currentNode;
+            currentNode = next;
+        }
+        this.head = prev;
     }
 }
