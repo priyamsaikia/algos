@@ -60,4 +60,22 @@ public class StringProblems {
         }
         Algo.print("Repeated characters " + repeatedChars);
     }
+    static void getMaximumRepeatedCharacter(String str) {
+        int[] chars = new int[256];
+
+        for (int i = 0; i < str.length(); i++) {
+            int index = str.charAt(i);
+            chars[index] += 1;
+        }
+
+        int largestCount = 0;
+        char c = str.charAt(0);
+        for (int i = 0; i < chars.length; i++) {
+            if (largestCount < chars[i]) {
+                largestCount = chars[i];
+                c = (char) i;
+            }
+        }
+        System.out.println("count = " + largestCount + " c = " + c);
+    }
 }

@@ -14,6 +14,7 @@
 
 ## [2. Dynamic](https://github.com/priyamsaikia/algos/blob/master/app/lib/src/main/java/saikia/priyam/lib/DynamicProgramming.java)
 ##### 1. Find the equilibrium index of an array: findEquilibriumIndex(int[] array)
+##### 2. Sort an array to form the largest number: sortToLargestNumber(int[] array) eg: {9, 5, 70} becomes {9,70,5}
 
 ## [3. Sorting](https://github.com/priyamsaikia/algos/blob/master/app/lib/src/main/java/saikia/priyam/lib/Sorting.java)
 ##### 1. Bubble Sort
@@ -25,3 +26,4 @@
 ##### 2. Palindrome: isPalindrome(String str)
 ##### 3. Reverse: reverseString(String str)
 ##### 4. Print Duplicate Characters in a String: printDuplicates(String str)
+##### 5. In a given string, print the most repeated element:getMaximumRepeatedCharacter(String str)

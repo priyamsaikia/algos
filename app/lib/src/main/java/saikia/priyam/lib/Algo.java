@@ -1,7 +1,5 @@
 package saikia.priyam.lib;
 
-import static saikia.priyam.lib.DynamicProgramming.findEquilibriumIndex;
-
 public class Algo {
     public static void main(String args[]) {
         System.out.println("Hello World");
@@ -21,10 +19,17 @@ public class Algo {
         //Sorting.insertionSort(arr);
         //Sorting.quickSort(arr, 0, arr.length - 1);
 
-        StringProblems.checkAnagram("mra", "ram");
-        StringProblems.isPalindrome("madam");
-        StringProblems.reverseString("papaya");
-        StringProblems.printDuplicates("papaya");
+//        StringProblems.checkAnagram("mra", "ram");
+//        StringProblems.isPalindrome("madam");
+//        StringProblems.reverseString("papaya");
+//        StringProblems.printDuplicates("papaya");
+        int[] list = {9, 5, 45, 3, 70, 123, 300, 345};
+        DynamicProgramming.sortToLargestNumber(list);
+        Practice lList = new Practice();
+        lList.insertFirst(2);
+        lList.insertFirst(22);
+        lList.insertFirst(12);
+        lList.print();
 
     }
 
